@@ -147,7 +147,7 @@
                 <li><a href="{{-- {{route('produto.cadastrar')}} --}}"><i class="fa fa-circle-o"></i>Registar Crianca</a></li>
                 <li><a href="{{route('categorias')}}"><i class="fa fa-circle-o"></i>Categorias</a></li>
                 <li><a href="{{route('padrinhos')}}"><i class="fa fa-circle-o"></i>Padrinhos</a></li>
-                <li><a href="{{-- {{route('produtos')}} --}}"><i class="fa fa-circle-o"></i>Criancas</a></li>
+                <li><a href="{{route('criancas')}}"><i class="fa fa-circle-o"></i>Criancas</a></li>
               </ul>
             </li>
              

@@ -56,7 +56,7 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 		'as'=>'categorias'
 	]);
 
-	//produtos
+	//padrinhos
 
 	Route::post('/padrinho/salvar',[
 		'uses'=>'PadrinhoController@store',
