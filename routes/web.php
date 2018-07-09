@@ -92,31 +92,29 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 
 	//criancas
 
-	Route::post('/padrinho/salvar',[
-		'uses'=>'PadrinhoController@store',
-		'as'=>'padrinho.salvar'
+	Route::post('/crianca/salvar',[
+		'uses'=>'CriancaController@store',
+		'as'=>'crianca.salvar'
 	]);
 
-	Route::post('/padrinho/{id}/atualizar',[
-		'uses'=>'PadrinhoController@update',
-		'as'=>'padrinho.atualizar'
+	Route::post('/crianca/{id}/atualizar',[
+		'uses'=>'CriancaController@update',
+		'as'=>'crianca.atualizar'
 	]);
 
-	Route::get('/padrinho/cadastrar',[
-		'uses'=>'PadrinhoController@create',
-		'as'=>'padrinho.cadastrar'
+	Route::get('/crianca/cadastrar',[
+		'uses'=>'CriancaController@create',
+		'as'=>'crianca.cadastrar'
 	]);
 
-	Route::get('/padrinho/{id}/editar',[
-		'uses'=>'PadrinhoController@edit',
-		'as'=>'padrinho.editar'
+	Route::get('/crianca/{id}/editar',[
+		'uses'=>'CriancaController@edit',
+		'as'=>'crianca.editar'
 	]);
 
-	
-
-	Route::get('/padrinho/{id}/deletar',[
-		'uses'=>'PadrinhoController@destroy',
-		'as'=>'padrinho.deletar'
+	Route::get('/crianca/{id}/deletar',[
+		'uses'=>'CriancaController@destroy',
+		'as'=>'crianca.deletar'
 	]);
 
 	Route::get('/criancas',[
